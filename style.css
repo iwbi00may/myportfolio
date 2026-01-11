@@ -531,383 +531,198 @@ nav ul {
 
 /* This is  meida query */
 
-@media (max-width: 1000px) {
+/* ===========================
+   Responsive Media Queries
+   =========================== */
+
+/* Small devices (phones, < 600px) */
+@media (max-width: 600px) {
   .nhead {
-    background-image: linear-gradient(rgb(134, 134, 134)100%);
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px 17px;
-    height: 65px;
-  }
-
-  .container .delete {
-    display: none;
+    height: 60px;
   }
 
   #left img {
-    margin-top: 0px;
-    /* height: 10.9vw; */
-    /* min-height: 7vw; */
-    height: 4.5vw;
+    height: 40px; /* fixed size for logo */
   }
 
   .mid {
-    display: none;
+    display: none; /* hide nav links, use burger menu */
   }
 
   .right {
-    display: none;
+    display: none; /* hide CV button on small screens */
   }
 
-  .line {
-    width: 26px;
-    background-color: white;
-    height: 2px;
-    margin: 3px 0px;
-    border-radius: 20px;
+  .burger {
+    display: block; /* show burger menu */
   }
-
 
   .container2 {
+    padding: 40px 20px;
+    clip-path: none; /* remove complex shape for simplicity */
     height: auto;
-    background-image: linear-gradient(to top, rgb(125, 125, 125)5%, rgb(204, 204, 204), rgb(225, 225, 225), rgb(125, 125, 125));
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 91%, 0 100%);
-    align-items: self-end;
-    z-index: 999;
-    margin-top: 50px;
-    padding: 16vh 10vw;
-    width: 100%;
-  }
-
-  .imag {
-    padding-bottom: 3.3vw;
+    text-align: center;
   }
 
   .container2 .imag img {
-    display: block;
-    margin: auto;
-    height: 12vw;
+    height: 120px;
+    margin: 0 auto 20px;
   }
 
-  .int {
+  .container2 h1 {
+    font-size: 24px;
+  }
+
+  .container2 h2 {
+    font-size: 20px;
+  }
+
+  .container2 p {
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
-  }
-
-  .int h1 {
-    font-size: 3.7vw;
-  }
-
-  .int h2 {
-    font-size: 4.2vw;
-  }
-
-  .int p {
-    margin-top: 10px;
-    line-height: 1.3;
-    text-align: center;
-    font-size: 2.3vw;
-  }
-
-  .dcv {
-    text-align: center;
-    margin-top: 2.8vh;
-
-  }
-
-  .btndcv {
-    font-size: 2.5vw;
-    padding: 1vw 2vw;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .main {
-    height: auto;
-    width: 100%;
-  }
-
-  .main h1 {
-    font-size: 6.9vw;
-    text-align: center;
-    padding-top: 35px;
   }
 
   .container3 {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 8vw;
-    margin-bottom: 35px;
+    flex-direction: column;
+    padding: 20px;
   }
 
-  .left2 {
-    padding-right: 3px;
+  .right2 img {
+    height: auto;
+    width: 100%;
   }
 
   .container3 p {
-    font-size: 1.8vw;
-    line-height: 2.54vw;
-    padding: 0px 0px;
-  }
-
-  .edupoint {
-    background: rgba(0, 0, 0, 0.7) url('./images/ep1.PNG');
-    background-size: cover;
-    background-blend-mode: darken;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 5vw 0vw;
-    flex-direction: column;
-    position: relative;
-    height: 54vw;
-    width: 100%;
-  }
-
-  .foodpoint {
-    background: rgba(0, 0, 0, 0.7) url('./images/Fp1.PNG');
-    background-size: cover;
-    background-blend-mode: darken;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 5vw 0vw;
-    flex-direction: column;
-    position: relative;
-    height: 54vw;
-    width: 100%;
-  }
-
-  .mediaid {
-    background: rgba(0, 0, 0, 0.7) url('./images/Md1.PNG');
-    background-size: cover;
-    background-blend-mode: darken;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding: 5vw 0vw;
-    flex-direction: column;
-    position: relative;
-    height: 54vw;
-    width: 100%;
-  }
-
-  .leftcontent {
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    height: 100%;
+    font-size: 16px;
+    line-height: 1.4;
+    padding: 20px 0;
   }
 
   .mywrk img {
-    height: 35vw;
-    border-radius: 1.7vw;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
   }
 
   .rightcontent {
-    color: #0b0b0b;
-    background: rgb(142, 142, 142);
-    padding: 1.6vw;
-    border-radius: 1.7vw;
-    line-height: 1.7vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    z-index: 3;
-    width: 45%;
+    padding: 20px;
+    border-radius: 10px;
+    line-height: 1.4;
   }
 
-  .mywrk h1 {
-    text-align: center;
-    font-size: 6.9vw;
-    padding: 0px 0px;
-    padding-bottom: 23px;
+  .rightcontent h4 {
+    font-size: 18px;
   }
 
-  .head {
-    text-align: center;
-    line-height: 36px;
-    margin-bottom: 12px;
-    /* font-size: 3.9vw; */
-    padding: 0px 10px;
-  }
-
-  .head h1 {
-    line-height: 33px;
-    padding: 0px 20px;
-  }
-
-  .head h3 {
-    margin-top: 3px;
-  }
-
-  .form {
-    height: auto;
-    padding: 12vw 0vw;
+  .rightcontent p {
+    font-size: 14px;
   }
 
   .form form {
-    display: flex;
-    flex-direction: column;
-    margin: -2px 7vw;
-    align-content: start;
-    align-items: unset;
-  }
-
-  .inputdata {
-    margin-top: 2.5vw;
-    height: 6vw;
-    border: 2px solid #acacac;
-    border-radius: 30px;
-    padding: 0px 10px;
-    font-size: 1.7vw;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .inputmessage {
-    margin-top: 2.5vw;
-    height: 25vw;
-    border: 2px solid #acacac;
-    border-radius: 12px;
-    padding: 12px 10px;
-    font-size: 1.8vw;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 10px;
   }
 
   .formbtn {
-    padding: 0vw 6vw;
-    border-radius: 50px;
-    font-size: 1.9vw;
-    text-decoration: none;
-    border: 2px solid #a4a4a4;
-    background-color: #959595;
-    margin: 20px 30vw 0px 30vw;
-    color: white;
-    height: 5.8vw;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 20px auto 0;
+    width: 100%;
   }
-  .form form button:hover {
-  color: black;
-  border: 2px solid #a4a4a4;
-  background-color: #e1e1e1;
-}
-
 
   .bottom {
-    height: auto;
-    background-color: gray;
-    padding: 10vw 0px;
+    padding: 20px;
   }
-
-  element {}
 
   .style1 {
-    text-decoration: none;
-
-    display: flex;
-
-    justify-content: space-evenly;
-
-    align-items: center;
-
-    padding: 0vw 13vw;
-
-  }
-
-  .first ul li {
-    padding: 0px 0px;
-  }
-
-  .bottom .first li a {
-    text-decoration: none;
-    color: rgb(32, 32, 32);
-    font-weight: 600;
-    font-size: 2.3vw;
-  }
-
-  .second {
-    margin-top: 45px;
-  }
-
-  .bottom .second h2 {
-    font-size: 3.9vw;
-    text-align: center;
-    padding-bottom: 10px;
-  }
-
-  .second .box img {
-    padding: 11px;
-    padding: 1vw 1vw;
-    height: 10vw;
-    border-radius: 7px;
-  }
-
-  .footerText {
-    font-size: 1.6vw;
-  }
-
-  .visibal .medcontainer {
     flex-direction: column;
+  }
+
+  .style1 li {
+    padding: 10px 0;
+  }
+
+  .second .box {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .second img {
+    padding: 0;
+    height: 40px;
+  }
+}
+
+/* Medium devices (tablets, 600px–900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .mid {
+    font-size: 14px;
+  }
+
+  nav ul li {
+    padding: 0 12px;
+  }
+
+  .container2 {
+    padding: 60px 40px;
     height: auto;
-    margin: 11px 0px;
-
   }
 
-  .visibal .medleft {
-    text-align: center;
-    width: 100%;
+  .container2 h1 {
+    font-size: 28px;
   }
 
-  .visibal .medmid {
-    display: flex;
-    width: 100%;
+  .container2 h2 {
+    font-size: 24px;
   }
 
-  .visibal .medmidul {
-    display: flex;
+  .container2 p {
+    font-size: 16px;
+  }
+
+  .container3 {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2vw;
-    padding: 3px 0px;
+    padding: 40px;
   }
 
-  .visibal .medmidul li {
-    font-size: 2vw;
-    padding: 4px 0px;
-  }
-
-  .visibal .medright {
-    display: flex;
-    padding: 8px 17px;
-    justify-content: center;
+  .right2 img {
+    height: auto;
     width: 100%;
   }
 
-  .visibal .medrightbtndcv {
-    font-size: 1.9vw;
-    padding: 4px 9px;
+  .mywrk img {
+    height: auto;
+    width: 100%;
   }
 
-  .visibal .meddelete {
+  .rightcontent {
+    padding: 20px;
+    line-height: 1.5;
+  }
+
+  .form form {
+    margin: 0 15vw;
+  }
+
+  .formbtn {
+    margin: 20px auto 0;
+    width: 60%;
+  }
+
+  .style1 {
+    flex-wrap: wrap;
+  }
+}
+
+/* Large devices (desktops, > 900px) */
+@media (min-width: 901px) {
+  .burger {
+    display: none; /* hide burger menu */
+  }
+
+  .mid {
     display: flex;
-    height: 1.4vh;
-    position: fixed;
-    top: 25px;
-    right: 25px;
   }
 
-  .visibal .medqHburger {
-    display: none;
+  .right {
+    display: block;
   }
-
 }
